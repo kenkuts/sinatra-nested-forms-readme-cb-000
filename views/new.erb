@@ -1,0 +1,15 @@
+<form method="POST" action="/student">
+  <label for="student">Student Name:</label>
+  <input type="text" name="student[name]" id="student">
+  <br>
+  <label for="grade">Grade:</label>
+  <input type="text" name="student[grade]" id="grade">
+  <br>
+  <label for="course">Course Name:</label>
+  <input type="text" name="student[course][name]" id="course">
+  <br>
+  <label for="topic">Course Topic:</label>
+  <input type="text" name="student[course][topic]" id="topic">
+  <br>
+  <input type="submit" value="Send">
+</form>
