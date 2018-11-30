@@ -2,9 +2,9 @@ class Course
   attr_reader :name, :topic
   @@courses = []
 
-  def initialize(name, topic)
-    @name = name
-    @topic = topic
+  def initialize(params)
+    @name = params[:name]
+    @topic = params[:topic]
     @@courses << self
   end
 
